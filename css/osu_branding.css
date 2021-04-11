@@ -25,6 +25,10 @@ p {
     line-height: 1.5;
 }
 
+.navbar-dark a {
+    color: #ffffff !important;
+}
+
 .light-text {
     color: #ffffff;
 }

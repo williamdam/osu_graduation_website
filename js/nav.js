@@ -18,8 +18,11 @@ logoLink.appendChild(logoImage);
 var menuButton = document.createElement("button");
 menuButton.setAttribute("class", "navbar-toggler");
 menuButton.setAttribute("type", "button");
-menuButton.setAttribute("data-toggle", "collapse");
-menuButton.setAttribute("data-target", "#expand-me");
+menuButton.setAttribute("data-bs-toggle", "collapse");
+menuButton.setAttribute("data-bs-target", "#navbarSupportedContent");
+menuButton.setAttribute("aria-controls", "navbarSupportedContent");
+menuButton.setAttribute("aria-expanded", "false");
+menuButton.setAttribute("aria-label", "Toggle navigation");
 container.appendChild(menuButton);
 
 var menuIcon = document.createElement("span");
@@ -28,30 +31,42 @@ menuButton.appendChild(menuIcon);
 
 var navLinksExpander = document.createElement("div");
 navLinksExpander.setAttribute("class", "collapse navbar-collapse");
-navLinksExpander.setAttribute("id", "expand-me");
+navLinksExpander.setAttribute("id", "navbarSupportedContent");
 container.appendChild(navLinksExpander);
 
-var navLinks = document.createElement("div");
-navLinks.setAttribute("class", "navbar-nav ms-auto");
+var navLinks = document.createElement("ul");
+navLinks.setAttribute("class", "navbar-nav ms-auto mb-2 mb-lg-0");
 navLinksExpander.appendChild(navLinks);
 
+var li = document.createElement("li");
+li.setAttribute("class", "nav-item");
+navLinks.appendChild(li);
+
 var link = document.createElement("a");
-link.setAttribute("class", "nav-item nav-link");
+link.setAttribute("class", "nav-link");
 link.setAttribute("href", "live.html");
 link.textContent = "Live Stream";
-navLinks.appendChild(link);
+li.appendChild(link);
+
+var li = document.createElement("li");
+li.setAttribute("class", "nav-item");
+navLinks.appendChild(li);
 
 var link = document.createElement("a");
-link.setAttribute("class", "nav-item nav-link");
+link.setAttribute("class", "nav-link");
 link.setAttribute("href", "chatroom.html");
 link.textContent = "Audience Chatroom";
-navLinks.appendChild(link);
+li.appendChild(link);
+
+var li = document.createElement("li");
+li.setAttribute("class", "nav-item");
+navLinks.appendChild(li);
 
 var link = document.createElement("a");
-link.setAttribute("class", "nav-item nav-link");
+link.setAttribute("class", "nav-link");
 link.setAttribute("href", "graduates.html");
 link.textContent = "Find Your Grad";
-navLinks.appendChild(link);
+li.appendChild(link);
 
 // Add main navigation to webpage
 document.body.appendChild(mainNavWrapper); 
@@ -62,16 +77,16 @@ var page = url.substring(url.lastIndexOf('/') + 1);
 
 // Set active link based on filename
 function activeLink(page) {
-    if (page == "commencement.html") {
-        var highlight = document.querySelector("a[href='commencement.html']");
+    if (page == "live.html") {
+        var highlight = document.querySelector("a[href='live.html']");
+        highlight.classList.add("active");
+    }
+    else if (page == "chatroom.html") {
+        var highlight = document.querySelector("[href='chatroom.html']");
         highlight.classList.add("active");
     }
     else if (page == "graduates.html") {
         var highlight = document.querySelector("[href='graduates.html']");
-        highlight.classList.add("active");
-    }
-    else if (page == "photos.html") {
-        var highlight = document.querySelector("[href='photos.html']");
         highlight.classList.add("active");
     }
 

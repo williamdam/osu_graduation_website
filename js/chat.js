@@ -1,12 +1,7 @@
 
     // Firebase configuration
     var firebaseConfig = {
-      apiKey: "",
-      authDomain: "",
-      projectId: "",
-      storageBucket: "",
-      messagingSenderId: "",
-      appId: ""
+        // Firebase credentials here
     };
 
     // Initialize Firebase

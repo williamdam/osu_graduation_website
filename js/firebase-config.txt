@@ -1,6 +1,0 @@
-apiKey: "AIzaSyBDf7lMYbye4vJbvC9ibs_WUqyDvUf2A04",
-authDomain: "osu-graduation.firebaseapp.com",
-projectId: "osu-graduation",
-storageBucket: "osu-graduation.appspot.com",
-messagingSenderId: "518346248968",
-appId: "1:518346248968:web:98363daadb9bdbfa3792bd"

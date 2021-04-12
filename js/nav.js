@@ -7,7 +7,7 @@ mainNavWrapper.appendChild(container);
 
 var logoLink = document.createElement("a");
 logoLink.setAttribute("class", "navbar-brand");
-logoLink.setAttribute("href", "index.html");
+logoLink.setAttribute("href", "/");
 container.appendChild(logoLink);
 
 var logoImage = document.createElement("img");
@@ -44,7 +44,7 @@ navLinks.appendChild(li);
 
 var link = document.createElement("a");
 link.setAttribute("class", "nav-link");
-link.setAttribute("href", "live.html");
+link.setAttribute("href", "/live");
 link.textContent = "Live Stream";
 li.appendChild(link);
 
@@ -54,7 +54,7 @@ navLinks.appendChild(li);
 
 var link = document.createElement("a");
 link.setAttribute("class", "nav-link");
-link.setAttribute("href", "chatroom.html");
+link.setAttribute("href", "/chatroom");
 link.textContent = "Audience Chatroom";
 li.appendChild(link);
 
@@ -64,7 +64,7 @@ navLinks.appendChild(li);
 
 var link = document.createElement("a");
 link.setAttribute("class", "nav-link");
-link.setAttribute("href", "graduates.html");
+link.setAttribute("href", "/graduates");
 link.textContent = "Meet the Grads";
 li.appendChild(link);
 
@@ -77,16 +77,17 @@ var page = url.substring(url.lastIndexOf('/') + 1);
 
 // Set active link based on filename
 function activeLink(page) {
-    if (page == "live.html") {
-        var highlight = document.querySelector("a[href='live.html']");
+    console.log("page: " + page);
+    if (page == "live") {
+        var highlight = document.querySelector("a[href='/live']");
         highlight.classList.add("active");
     }
-    else if (page == "chatroom.html") {
-        var highlight = document.querySelector("[href='chatroom.html']");
+    else if (page == "chatroom") {
+        var highlight = document.querySelector("[href='/chatroom']");
         highlight.classList.add("active");
     }
-    else if (page == "graduates.html") {
-        var highlight = document.querySelector("[href='graduates.html']");
+    else if (page == "graduates") {
+        var highlight = document.querySelector("[href='/graduates']");
         highlight.classList.add("active");
     }
 

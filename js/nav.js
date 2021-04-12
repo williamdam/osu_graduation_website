@@ -65,7 +65,7 @@ navLinks.appendChild(li);
 var link = document.createElement("a");
 link.setAttribute("class", "nav-link");
 link.setAttribute("href", "graduates.html");
-link.textContent = "Find Your Grad";
+link.textContent = "Meet the Grads";
 li.appendChild(link);
 
 // Add main navigation to webpage

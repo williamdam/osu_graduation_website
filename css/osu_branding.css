@@ -114,3 +114,7 @@ a.active {
 .chat-box {
     max-height: 375px;
 }
+
+.min-body-height {
+    min-height: 600px;
+}

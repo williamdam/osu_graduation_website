@@ -13,14 +13,54 @@
 <body>
   
   <script src="js/nav.js"></script>
+
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
 
-  <main>
-  <script src="js/load_photos.js"></script>
-</main>
+  <main class="container p-4">
 
+    <div class="jumbotron rounded">
+      <div class="row justify-content-start">
+        <h1 class="display-4">Meet The Grads</h1>
+        <p class="lead">
+          Scroll down to see the faces of determination, commitment, and persistence.  These are the bright
+          minds that have successfully completed their degree programs at Oregon State University, joining
+          over 200,000 alumni around the world.  
+        </p>
+        <p>
+          <strong>Attention New Grads: Submit your photos and messages instantly!</strong> That's
+          right!  Download the app to your iOS or Android device, where you can snap a selfie, and upload
+          your name card to this page!  
+        </p>
+      </div>
+      <hr class="my-4">
+    </div>
+
+    <div class="row">
+      <div class="col-md-4" id="grad-col-1"></div>
+      <div class="col-md-4" id="grad-col-2"></div>
+      <div class="col-md-4" id="grad-col-3"></div>
+    </div>
+
+    <div class="alert alert-success my-4 osu-orange-bg light-text" role="alert">
+      <h4 class="alert-heading">Cross-Platform Software Development: Web + iOS + Android</h4>
+      <p>
+        This page is a showcase of my versatility as a developer across multiple platforms. In this scenario,
+        I built a cross-platform mobile application for iOS and Android, that allows the graduates to
+        submit their photos and stories, directly to this page. The information is stored in a NoSQL database,
+        where the Javascript on this page listens for changes, and displays the cards in 3 columns.
+      </p>
+      <hr>
+      <p class="mb-0"><strong>Technical Points:</strong> Flutter, Dart, iOS, Android, HTML, CSS, Javascript, DOM Manipulation, NoSQL (Firestore DB)</p>
+      <p class="mb-0"><strong>Lessons Learned:</strong> Cross-platform mobile application development and system design.</p>
+      <p class="lead">
+        <a class="btn btn-light btn-lg mt-3 me-3" href="about.html" type="submit">Learn More</a>
+      </p>
+    </div>
+  </main>
+
+  <script src="js/load_photos.js"></script>
   <script src="js/footer.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 

@@ -1,7 +1,7 @@
 
     // Firebase configuration
     var firebaseConfig = {
-        // Firebase credentials here
+        // Get credentials from firebase-config.txt
     };
 
     // Initialize Firebase

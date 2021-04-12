@@ -20,48 +20,50 @@
   <main class="container p-4">
 
     <div class="jumbotron rounded">
-        <div class="row justify-content-start">
-          <h1 class="display-4">Audience Chatroom</h1>
-          <p class="lead">
-            Virtual commencement doesn't mean you can't show your support!--Quite the opposite, actually.  
-            Guests, like yourself, are streaming the live feed, right now, from around the world!  Show
-            your graduate how proud you are, of their accomplishments, by making some noise in this 
-            live audience chatroom.  You can also buy a gift for your new grad, by visting the <a href="https://osubeaverstore.com/" target="_blank">Beaver Store</a>.
-          </p>
-        </div>
-        <hr class="my-4">
-      </div>
-
-      <div class="row mx-1">
-    <div style="position: relative" id="chat-area" class="col-lg-8">
-        <form onsubmit="return postMessageOnReturn()" id="chat-form" class="d-flex message-bar">
-          <input id="form-message" class="form-control me-2" type="text" name="message" placeholder="Type a message" aria-label="Search" autocomplete="off">
-          <button id="send-button" class="btn btn-outline-primary ml-2" type="button">Send</button>
-        </form>
-    </div>
-    <figure class="col-lg-4 p-5">
-        <img class="img-fluid" style="width: auto;" src="images/osu-logo-vertical.png" alt="OSU Logo">
-    </figure>
-</div>
-    <div class="alert alert-success my-4 osu-orange-bg light-text" role="alert">
-        <h4 class="alert-heading">JS + DOM + Cloud Firestore = Realtime Updates</h4>
-        <p>
-          This is a demonstration of Javascript and interaction with a NoSQL database.  I've setup a 
-          Javascript listener to get user input, then stores that user input with a timestamp on a
-          Firestore Database.  There's a snapshot listener, which checks for changes in metadata
-          on the database, then updates the DOM, accordingly.  The data read from the database is 
-          sorted by timestamp, in ascending order, and auto scrolls to the bottom.
-        </p>
-        <p><strong>Note: </strong>Database connection doesn't use authentication, for demonstration purposes.  
-            An actual deployment would involve user authentication and the user IDs displayed on each post.
-        </p>
-        <hr>
-        <p class="mb-0"><strong>Technical Points:</strong> HTML, CSS, Javascript, DOM Manipulation, NoSQL (Firestore DB)</p>
-        <p class="mb-0"><strong>Lessons Learned:</strong> Database interaction and realtime updates without refreshing the browser. </p>
+      <div class="row justify-content-start">
+        <h1 class="display-4">Audience Chatroom</h1>
         <p class="lead">
-          <a class="btn btn-light btn-lg mt-3 me-3" href="about.html" type="submit">Learn More</a>
+          Virtual commencement doesn't mean you can't show your support!--Quite the opposite, actually.  
+          Guests, like yourself, are streaming the live feed, right now, from around the world!  Show
+          your graduate how proud you are, of their accomplishments, by making some noise in this 
+          live audience chatroom.  You can also buy a gift for your new grad, by visting the <a href="https://osubeaverstore.com/" target="_blank">Beaver Store</a>.
         </p>
       </div>
+      <hr class="my-4">
+    </div>
+
+    <div class="row mx-1">
+      <div style="position: relative" id="chat-area" class="col-lg-8">
+          <form onsubmit="return postMessageOnReturn()" id="chat-form" class="d-flex message-bar">
+            <input id="form-message" class="form-control me-2" type="text" name="message" placeholder="Type a message" aria-label="Search" autocomplete="off">
+            <button id="send-button" class="btn btn-outline-primary ml-2" type="button">Send</button>
+          </form>
+      </div>
+      <figure class="col-lg-4 p-5">
+          <img class="img-fluid" style="width: auto;" src="images/osu-logo-vertical.png" alt="OSU Logo">
+      </figure>
+    </div>
+
+    <div class="alert alert-success my-4 osu-orange-bg light-text" role="alert">
+      <h4 class="alert-heading">JS + DOM + NoSQL = Realtime Updates</h4>
+      <p>
+        This is a demonstration of Javascript and interaction with a NoSQL database.  I've setup a 
+        Javascript listener to get user input, then stores that user input with a timestamp on a
+        Firestore Database.  There's a snapshot listener, which checks for changes in metadata
+        on the database, then updates the DOM, accordingly.  The data read from the database is 
+        sorted by timestamp, in ascending order, and auto scrolls to the bottom.
+      </p>
+      <p><strong>Note: </strong>Database connection doesn't use authentication, for demonstration purposes.  
+          An actual deployment would involve user authentication and the user IDs displayed on each post.
+      </p>
+      <hr>
+      <p class="mb-0"><strong>Technical Points:</strong> HTML, CSS, Javascript, DOM Manipulation, NoSQL (Firestore DB)</p>
+      <p class="mb-0"><strong>Lessons Learned:</strong> Database interaction and realtime updates without refreshing the browser. </p>
+      <p class="lead">
+        <a class="btn btn-light btn-lg mt-3 me-3" href="about.html" type="submit">Learn More</a>
+      </p>
+    </div>
+
   </main>
 
   <script src="js/chat.js"></script>

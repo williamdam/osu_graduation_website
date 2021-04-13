@@ -14,25 +14,44 @@
   
   <script src="js/nav.js"></script>
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
 
   <main class="container p-4">
 
     <div class="jumbotron rounded">
       <div class="row justify-content-start">
-        <h1 class="display-4">Meet The Grads</h1>
-        <p class="lead">
-          Scroll down to see the faces of determination, commitment, and persistence.  These are the bright
-          minds that have successfully completed their degree programs at Oregon State University, joining
-          over 200,000 alumni around the world.  
-        </p>
-        <p>
-          <strong>Attention New Grads: Submit your photos and messages instantly!</strong> That's
-          right!  Download the app to your iOS or Android device, where you can snap a selfie, and upload
-          your name card to this page!  
-        </p>
+        <div class="col-md-6">
+          <h1 class="display-4">Meet The Grads</h1>
+          <p class="lead">
+            Scroll down to see the faces of determination, commitment, and persistence.  These are the bright
+            minds that have successfully completed their degree programs at Oregon State University, joining
+            over 200,000 alumni around the world.  
+          </p>
+          <h2>Attention New Grads</h2>
+          <p><strong>Submit your photos and messages instantly!</strong></p>
+          <p>
+            That's right!  Download the app to your iOS or Android device, where you can snap a selfie, and upload
+            your name card to this page!  
+          </p>
+        </div>
+        <figure class="col-md-2">
+          <img class="img-fluid" src="images/grad-app-form.jpg" alt="OSU Grad App Form">
+        </figure>
+        <figure class="col-md-2">
+          <img class="img-fluid" src="images/grad-app-list.jpg" alt="OSU Grad App Form">
+        </figure>
+        <figure class="col-md-2">
+          <img class="img-fluid" src="images/grad-app-card.jpg" alt="OSU Grad App Form">
+        </figure>
+
       </div>
       <hr class="my-4">
     </div>
